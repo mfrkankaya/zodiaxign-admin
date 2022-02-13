@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { useAnalyzesList } from '../../contexts/AnalyzesListContext'
-import { addAnalysis } from '../../firebase/collections/analyzes'
-import ParagraphInput from '../ParagraphInput'
+import { useAnalyzesList } from '../contexts/AnalyzesListContext'
+import { addAnalysis } from '../firebase/collections/analyzes'
+import ParagraphInput from './ParagraphInput'
 
 const CreateAnalysisForm = () => {
   const { addAnalysisToStore } = useAnalyzesList()

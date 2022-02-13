@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { useAnalyzesList } from '../../contexts/AnalyzesListContext'
+import { useAnalyzesList } from '../contexts/AnalyzesListContext'
 import {
   updateAnalysis,
   deleteAnalysis
-} from '../../firebase/collections/analyzes'
-import ParagraphInput from '../ParagraphInput'
+} from '../firebase/collections/analyzes'
+import ParagraphInput from './ParagraphInput'
 
 const AnalysisModal = ({ close, text, ...props }) => {
   const { updateAnalysisInStore, deleteAnalysisInStore } = useAnalyzesList()

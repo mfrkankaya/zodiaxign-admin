@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { updateHoroscope } from '../../firebase/collections/horoscopes'
-import ParagraphInput from '../ParagraphInput'
+import { updateHoroscope } from '../firebase/collections/horoscopes'
+import ParagraphInput from './ParagraphInput'
 
 const TAB_MAP = {
   daily: 'Günlük',

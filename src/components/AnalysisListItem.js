@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import AnalysisModal from '../AnalysisModal'
+import AnalysisModal from './AnalysisModal'
 
 const AnalysisListItem = (props) => {
   const { text } = props

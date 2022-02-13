@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React from 'react'
-import { useAnalyzesList } from '../../contexts/AnalyzesListContext'
-import AnalysisListItem from '../AnalysisListItem'
+import { useAnalyzesList } from '../contexts/AnalyzesListContext'
+import AnalysisListItem from './AnalysisListItem'
 
 const AanlyzesList = () => {
   const { analyzes, loading, loadAnalyzes, isLoadAvailable } = useAnalyzesList()

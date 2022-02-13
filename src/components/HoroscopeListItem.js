@@ -1,5 +1,5 @@
 import React from 'react'
-import { useActiveHoroscope } from '../../contexts/ActiveHoroscopeContext'
+import { useActiveHoroscope } from '../contexts/ActiveHoroscopeContext'
 
 const HoroscopeListItem = ({ slug, name }) => {
   const { setSlug } = useActiveHoroscope()

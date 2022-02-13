@@ -1,6 +1,6 @@
 import React from 'react'
-import { useActiveHoroscope } from '../../contexts/ActiveHoroscopeContext'
-import HoroscopeUpdateForm from '../HoroscopeUpdateForm'
+import { useActiveHoroscope } from '../contexts/ActiveHoroscopeContext'
+import HoroscopeUpdateForm from './HoroscopeUpdateForm'
 
 const HoroscopeModal = () => {
   const { slug, setSlug, data, loading } = useActiveHoroscope()
