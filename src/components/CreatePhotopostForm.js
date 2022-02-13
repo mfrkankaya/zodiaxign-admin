@@ -32,7 +32,8 @@ const CreatePhotopostForm = ({ slug }) => {
         <div className="mt-6">Yükleniyor...</div>
       ) : (
         <button
-          className="px-4 py-2 bg-indigo-600 rounded mt-4"
+          disabled={!selectedFiles.length}
+          className="px-4 py-2 bg-indigo-600 rounded mt-4 disabled:bg-slate-500 disabled:text-slate-400"
           onClick={handleSubmit}>
           Yükle
         </button>

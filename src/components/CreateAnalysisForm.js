@@ -32,7 +32,8 @@ const CreateAnalysisForm = () => {
         <div className="mt-3">Kaydediliyor...</div>
       ) : (
         <button
-          className="px-4 py-2 mt-2 rounded bg-indigo-600"
+          disabled={!text}
+          className="px-4 py-2 mt-2 rounded bg-indigo-600 disabled:bg-slate-500 disabled:text-slate-400"
           onClick={handleSubmit}>
           Analizi kaydet
         </button>
