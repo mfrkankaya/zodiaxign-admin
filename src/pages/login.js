@@ -8,7 +8,7 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     login(email, password).then(() => {
-      window.location.href = '/'
+      window.location.href = '/horoscopes'
     })
   }
 
