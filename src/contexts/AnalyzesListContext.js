@@ -47,9 +47,9 @@ export const AnalyzesListProvider = ({ children }) => {
         loading,
         loadAnalyzes,
         isLoadAvailable,
+        addAnalysisToStore,
         updateAnalysisInStore,
-        deleteAnalysisInStore,
-        addAnalysisToStore
+        deleteAnalysisInStore
       }}>
       {children}
     </Context.Provider>

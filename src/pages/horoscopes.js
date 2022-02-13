@@ -9,7 +9,7 @@ const Horoscopes = () => {
   return (
     <ActiveHoroscopeProvider>
       <Layout>
-        <div className=" mt-4 px-4 grid gap-4 grid-cols-2 sm:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-4 px-4 grid gap-4 grid-cols-2 sm:grid-cols-4 lg:grid-cols-6">
           {HOROSCOPES.map((horoscope) => (
             <HoroscopeListItem key={horoscope.slug} {...horoscope} />
           ))}
