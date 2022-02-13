@@ -10,13 +10,14 @@ import {
   limit,
   deleteDoc
 } from 'firebase/firestore'
-import { firestore } from '../firebase'
+import { firestore } from '../'
 
+export const ANALYZES_PER_PAGE = 20
 const analyzesCollection = collection(firestore, 'analyzes')
 
 export const addAnalysis = async (analysis) => {
   const docRef = await addDoc(analyzesCollection, analysis)
-  return { id: docRef.id, ...analysis }
+  return { id: docRef.id, ...analysis, createdAt: new Date().getTime() }
 }
 
 export const updateAnalysis = async (analysis) => {
@@ -35,7 +36,7 @@ export const getAnalyzes = async (start = new Date().getTime()) => {
       analyzesCollection,
       orderBy('createdAt', 'desc'),
       startAt(start),
-      limit(20)
+      limit(ANALYZES_PER_PAGE)
     )
   )
 
